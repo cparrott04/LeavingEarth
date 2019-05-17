@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica', 'sans-serif';
+}
+
+#wrapper {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#footer {
+    position : fixed;
+    bottom : 0;
+    width: 100%;
+    background-color: #0099ff;
+    color: #fff;
+    min-height: 50px;
+}
+
+#blanket {
+    visibility: hidden;
+    position: fixed;
+    background: #fff;
+    opacity: 0.9;
+    z-index: 9998;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.modal {
+    overflow: hidden;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #000;
+    position: fixed;
+    z-index: 9999;
+    visibility: hidden;
+    background: #fff;
+    margin: 0;
+    min-height: 150px;
+    box-shadow: 5px 5px 3px #ccc;
+}
+
+.modal .close {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.button {
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black ;
+    -moz-border-radius: 8px ;
+    -webkit-border-radius: 8px ;
+    background-color: white ;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+#numberOfOutcomes {
+    width: 100%;
+    background: #ccc;
+    margin-bottom: 5px;
+}
+
+#numberOfOutcomes .button {
+    width: 10%;
+    background: #eee;
+}
+
+#numberOfOutcomes .selected {
+    border: 4px #00f solid;
+    background: #fff;
+}
+
+#numberOfOutcomes .warning {
+    border: 4px #f00 solid;
+}
+
+.modalSelection {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+    border-top: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.modalSelection span:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.modalSelection span {
+    width: 50%;
+    display: block;
+    float: left;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#agencySelection span {
+    width: 20%;
+}
+
+#nasa {
+    background: #0099ff;
+}
+
+#okb1 {
+    background: #ff4d4d;
+}
+
+#sac {
+    background: #ffff66;
+}
+
+#cnes {
+    background: #737373;
+}
+
+#isas {
+    background: #f2f2f2;
+}
+
+#normalViewButton, #compactViewButton {
+    cursor: default;
+}
+
+.footerNavi span {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    cursor: pointer;
+    line-height: 50px;
+    border-right: 1px solid #fff;
+}
+
+.footerNavi span:first-child {
+    width: 25%;
+}
+
+.footerNavi span:last-child {
+    width: 25%;
+    border-right: 0;
+}
+
+.footerNavi {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.disabled {
+    cursor: default !important;
+    color: #ccc;
+}
